@@ -1,6 +1,5 @@
 package _01_introduction_java.exercise;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExchangeMoneyApp {
