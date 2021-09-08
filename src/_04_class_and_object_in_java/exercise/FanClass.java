@@ -1,46 +1,27 @@
 package _04_class_and_object_in_java.exercise;
 
 public class FanClass {
-    final int SLOW = 1;
-    final int MEDIUM = 2;
-    final int FAST = 3;
+    public static final int SLOW = 1;
+    public static final int MEDIUM = 2;
+    public static final int FAST = 3;
     private int speed = SLOW;
-    boolean onOf = false;
+    boolean on = false;
     double radius = 5;
     String color = "blue";
 
-    public FanClass (int speed, boolean onOf, double radius, String color){
+    public FanClass(int speed, boolean on, double radius, String color) {
         this.speed = speed;
-        this.onOf = onOf;
+        this.on = on;
         this.radius = radius;
         this.color = color;
     }
-    public int getSLOW() {
-        return SLOW;
+
+    public boolean isOn() {
+        return on;
     }
 
-    public int getMEDIUM() {
-        return MEDIUM;
-    }
-
-    public int getFAST() {
-        return FAST;
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    public boolean isOnOf() {
-        return onOf;
-    }
-
-    public void setOnOf(boolean onOf) {
-        this.onOf = onOf;
+    public void setOn(boolean on) {
+        this.on = on;
     }
 
     public double getRadius() {
@@ -58,20 +39,32 @@ public class FanClass {
     public void setColor(String color) {
         this.color = color;
     }
+    FanClass(){
 
-    @Override
-    public String toString() {
-        if (onOf) {
-            return "FanClass{" +
-                    " speed=" + speed +
-                    ", radius=" + radius +
-                    ", fan is on" +
-                    ", color='" + color + '\'' +
-                    '}';
-        } else return "FanClass{" +
-                ", fan is off" +
-                ", radius=" + radius +
-                ", color='" + color + '\'' +
-                '}';
+    }
+    public String toString(){
+        if(this.on){
+            return " - speed is: " + this.speed + ", color is: " + this.color + ", radius is: " + this.radius + ", fan is on ";
+        }else {
+            return " - color is: " + this.color + ", radius is: " + this.radius + ", fan is off ";
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
