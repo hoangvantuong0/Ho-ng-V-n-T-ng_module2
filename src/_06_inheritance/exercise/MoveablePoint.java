@@ -1,15 +1,19 @@
 package _06_inheritance.exercise;
 
+import java.util.Arrays;
+
 public class MoveablePoint extends Point {
     private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;
-   public MoveablePoint(){
+
+    public MoveablePoint() {
     }
-   public MoveablePoint(float x, float y, float xSpeed, float ySpeed){
-       super(x, y);
-       this.xSpeed = xSpeed;
-       this.ySpeed = ySpeed;
-   }
+
+    public MoveablePoint(float x, float y) {
+        super(x, y);
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
 
     public float getxSpeed() {
         return xSpeed;
@@ -26,28 +30,21 @@ public class MoveablePoint extends Point {
     public void setySpeed(float ySpeed) {
         this.ySpeed = ySpeed;
     }
-    public void setSpeed(float xSpeed, float ySpeed){
-       this.xSpeed = xSpeed;
-       this.ySpeed = ySpeed;
-    }
-    public float[] getSpeed(){
-       float[] arr2 = {this.xSpeed, this.ySpeed};
-       return arr2;
-    }
-    public float[] move(){
-       float a = super.getX()+xSpeed;
-       float b = super.getY()+ySpeed;
-       float[] arr3 = {a, b};
-       return arr3;
+
+
+    public MoveablePoint move() {
+        setX(getX() + getxSpeed());
+        setY(getY() + getySpeed());
+        return this;
     }
 
     @Override
     public String toString() {
-        return "MoveablePoint{" +
-                ", x =" + super.getX() +
+        return " MoveablePoint {" +
+                " x =" + super.getX() +
                 ", y =" + super.getY() +
                 ", xSpeed=" + xSpeed +
                 ", ySpeed=" + ySpeed +
-                '}';
+                Arrays.toString(getXY()) + '}';
     }
 }
