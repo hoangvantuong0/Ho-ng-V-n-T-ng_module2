@@ -2,7 +2,8 @@ package _06_inheritance.exercise;
 
 public class Cylinder extends Circle {
     private double height = 0.0;
-    public Cylinder(){
+    public Cylinder(double radius){
+        super(radius);
     }
     public Cylinder(double radius, String color, double height){
         super(radius, color);

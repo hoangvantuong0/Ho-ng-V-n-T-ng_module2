@@ -30,20 +30,3 @@ public class AbstractAndInterfaceTests {
         }
     }
 }
-
-
-
-//            for (int i = 0; i < 2; i++) {
-//                if (animals[i] != null) {
-//                    if (animals[i] instanceof Chicken) {
-////                        Edible edible = (Chicken) animal;
-//                        System.out.println(edible.howToEat());
-//
-//                    } else {
-//                        Edible edible = (Tiger) animal;
-//                        System.out.println(edible.howToEat());
-//                    }
-//                } else {
-//                    break;
-//                }
-//            }

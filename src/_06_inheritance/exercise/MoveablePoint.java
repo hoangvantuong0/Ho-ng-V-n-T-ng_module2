@@ -9,7 +9,11 @@ public class MoveablePoint extends Point {
     public MoveablePoint() {
     }
 
-    public MoveablePoint(float x, float y) {
+    public MoveablePoint(float xSpeed, float ySpeed) {
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
+    public MoveablePoint(float x, float y, float xSpeed, float ySpeed) {
         super(x, y);
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;

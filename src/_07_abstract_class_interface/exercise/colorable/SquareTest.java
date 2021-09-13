@@ -9,12 +9,12 @@ public class SquareTest {
         shapes[2] = new Square(5);
         for (int i = 0; i < shapes.length; i++) {
             if (shapes[i] instanceof Circle) {
-                System.out.println("Area: " + ((Circle) shapes[i]).getArea());
+                System.out.println("The Circle's area is: " + ((Circle) shapes[i]).getArea());
             } else if (shapes[i] instanceof Square) {
-                System.out.println("Area: " + ((Square) shapes[i]).getArea());
-                ((Square) shapes[i]).howToColor("String");
+                System.out.println("The Square's area is: " + ((Square) shapes[i]).getArea());
+                ((Square) shapes[i]).howToColor("");
             } else {
-                System.out.println("Area: " + ((Rectangle) shapes[i]).getArea());
+                System.out.println("The Rectangle's area is: " + ((Rectangle) shapes[i]).getArea());
             }
         }
     }

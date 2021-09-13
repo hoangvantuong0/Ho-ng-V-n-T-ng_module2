@@ -9,48 +9,48 @@ public class DigitToWord {
         System.out.printf("Enter a number between %d and %d: ", MINIMUM, MAXIMUM);
         int number = input.nextInt();
         if (number > MAXIMUM) {
-            System.out.printf("The number entered is too large!\n");
+            System.out.println("The number entered is too large!\n");
             System.exit(1);
         }
         if (number == 0) {
-            System.out.printf("Zero\n");
+            System.out.println("Zero\n");
             System.exit(1);
         }
         if (number < MINIMUM ) {
-            System.out.printf("The number entered is invalid!\n");
+            System.out.println("The number entered is invalid!\n");
             System.exit(1);
         }
         if (number / 100 != 0) {
             switch (number / 100) {
                 case 1:
-                    System.out.printf("one hundred and ");
+                    System.out.println("one hundred and ");
                     break;
                 case 2:
-                    System.out.printf("two hundred and ");
+                    System.out.println("two hundred and ");
                     break;
                 case 3:
-                    System.out.printf("three hundred and ");
+                    System.out.println("three hundred and ");
                     break;
                 case 4:
-                    System.out.printf("four hundred and ");
+                    System.out.println("four hundred and ");
                     break;
                 case 5:
-                    System.out.printf("five hundred and ");
+                    System.out.println("five hundred and ");
                     break;
                 case 6:
-                    System.out.printf("six hundred and ");
+                    System.out.println("six hundred and ");
                     break;
                 case 7:
-                    System.out.printf("seven hundred and ");
+                    System.out.println("seven hundred and ");
                     break;
                 case 8:
-                    System.out.printf("eight hundred and ");
+                    System.out.println("eight hundred and ");
                     break;
                 case 9:
-                    System.out.printf("nine hundred and ");
+                    System.out.println("nine hundred and ");
                     break;
                 default:
-                    System.out.printf("Something wrong!");
+                    System.out.println("Something wrong!");
                     System.exit(1);
             }
         }
@@ -59,108 +59,108 @@ public class DigitToWord {
                     case 1:
                         switch (number % 10) {
                             case 0:
-                                System.out.printf("ten");
+                                System.out.println("ten");
                                 break;
                             case 1:
-                                System.out.printf("eleven");
+                                System.out.println("eleven");
                                 break;
                             case 2:
-                                System.out.printf("twelve");
+                                System.out.println("twelve");
                                 break;
                             case 3:
-                                System.out.printf("thirteen");
+                                System.out.println("thirteen");
                                 break;
                             case 4:
-                                System.out.printf("fourteen");
+                                System.out.println("fourteen");
                                 break;
                             case 5:
-                                System.out.printf("fifteen");
+                                System.out.println("fifteen");
                                 break;
                             case 6:
-                                System.out.printf("sixteen");
+                                System.out.println("sixteen");
                                 break;
                             case 7:
-                                System.out.printf("seventeen");
+                                System.out.println("seventeen");
                                 break;
                             case 8:
-                                System.out.printf("eighteen");
+                                System.out.println("eighteen");
                                 break;
                             case 9:
-                                System.out.printf("nineteen");
+                                System.out.println("nineteen");
                                 break;
                             default:
-                                System.out.printf("Something wrong!");
+                                System.out.println("Something wrong!");
                                 System.exit(1);
                         }
                         System.exit(0);
                         break;
                     case 2:
-                        System.out.printf("twenty ");
+                        System.out.println("twenty ");
                         break;
                     case 3:
-                        System.out.printf("thirty ");
+                        System.out.println("thirty ");
                         break;
                     case 4:
-                        System.out.printf("forty ");
+                        System.out.println("forty ");
                         break;
                     case 5:
-                        System.out.printf("fifty ");
+                        System.out.println("fifty ");
                         break;
                     case 6:
-                        System.out.printf("sixty ");
+                        System.out.println("sixty ");
                         break;
                     case 7:
-                        System.out.printf("seventy ");
+                        System.out.println("seventy ");
                         break;
                     case 8:
-                        System.out.printf("eighty ");
+                        System.out.println("eighty ");
                         break;
                     case 9:
-                        System.out.printf("ninety ");
+                        System.out.println("ninety ");
                         break;
                     default:
-                        System.out.printf("Something wrong!");
+                        System.out.println("Something wrong!");
                         System.exit(1);
                 }
                 if (number % 10 != 0)
-                    System.out.printf(" ");
+                    System.out.println(" ");
             }
             if (number % 10 != 0) {
 
                 switch (number % 10) {
                     case 1:
-                        System.out.printf("one");
+                        System.out.println("one");
                         break;
                     case 2:
-                        System.out.printf("two");
+                        System.out.println("two");
                         break;
                     case 3:
-                        System.out.printf("three");
+                        System.out.println("three");
                         break;
                     case 4:
-                        System.out.printf("four");
+                        System.out.println("four");
                         break;
                     case 5:
-                        System.out.printf("five");
+                        System.out.println("five");
                         break;
                     case 6:
-                        System.out.printf("six");
+                        System.out.println("six");
                         break;
                     case 7:
-                        System.out.printf("seven");
+                        System.out.println("seven");
                         break;
                     case 8:
-                        System.out.printf("eight");
+                        System.out.println("eight");
                         break;
                     case 9:
-                        System.out.printf("nine");
+                        System.out.println("nine");
                         break;
                     default:
-                        System.out.printf("Something wrong!");
+                        System.out.println("Something wrong!");
                         System.exit(1);
                 }
             }
 
-            System.out.printf("\n");
+            System.out.println("\n");
             }
         }
