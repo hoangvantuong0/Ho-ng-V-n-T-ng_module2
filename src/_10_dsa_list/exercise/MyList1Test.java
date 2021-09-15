@@ -14,11 +14,14 @@ public class MyList1Test {
         myList2.add("v");
         myList2.add("t");
         myList2.add("r");
+        myList2.add("r");
         myList1.addAll(myList2);
         System.out.println(myList1);
-        myList1.remove(5);
-        System.out.println(myList1);
-        myList1.get(3);
-        System.out.println(myList1);
+        System.out.println("size: " + myList1.size());
+        System.out.println("get index: " + myList1.get(3));
+        System.out.println("contains: " + myList1.contains("hf"));
+        System.out.println("- index of 2: " + myList1.indexOf(2));
+        System.out.println("- remove index 2: " + myList1.remove(5));
+        System.out.println("- clear: ");
     }
 }

@@ -5,6 +5,7 @@ public class LinkedList<E> {
         private Node next;
         private Object data;
         private Object[] elements;
+        private  int numNodes;
 
         public Node(Object data) {
             this.data = data;
@@ -14,7 +15,6 @@ public class LinkedList<E> {
             return this.data;
         }
     }
-
     private Node head;
     private int numNodes = 0;
 
@@ -22,14 +22,15 @@ public class LinkedList<E> {
 
     }
 
-    public void add(int index, E data) {
-        Node temp = head;
-        Node holder;
-        for (int i = 0; i < index - 1 && temp.next != null; i++) {
+    public void add(int index, Object data) {
+        LinkedList.Node temp = head;
+        LinkedList.Node holder;
+
+        for(int i=0; i < index-1 && temp.next != null; i++) {
             temp = temp.next;
         }
         holder = temp.next;
-        temp.next = new Node(data);
+        temp.next = new LinkedList.Node(data);
         temp.next.next = holder;
         numNodes++;
     }
@@ -146,20 +147,24 @@ public class LinkedList<E> {
             temp = temp.next;
         }
     }
+
+    public Object getFirst() {
+        return head.data;
+    }
+
+    public Object getLast() {
+        LinkedList.Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        return temp.data;
+    }
+
+    public void clear() {
+        head = null;
+    }
+
 }
-//    public void ensureCapacity(int minCapacity) {
-//        int newSize = elements.length * 2;
-//        elements = Arrays.copyOf(elements, newSize);
-//    }
-//addBoolean
-//getFirst
-//getLast
-//clear
-
-
-
-
-
 
 
 
