@@ -10,6 +10,7 @@ public class ProductsManager {
 
     static {
         Products products1 = new Products(1, "Book", "good quality", 3000);
+        Products products4 = new Products(1, "Book", "good quality", 3000);
         Products products2 = new Products(2, "Pen", "made in VietNam", 2000);
         Products products3 = new Products(3, "Notebook", "made in Korea", 4000);
         productList.add(products1);
@@ -32,9 +33,12 @@ public class ProductsManager {
     }
 
     public static void showProducts() {
-        for (int i = 0; i < productList.size(); i++) {
-            System.out.println(productList.get(i));
+        for (Products product: productList) {
+            System.out.println(product);
         }
+//        for (int i = 0; i < productList.size(); i++) {
+//            System.out.println(productList.get(i));
+//        }
     }
 
     public static void deleteProducts() {
@@ -42,11 +46,17 @@ public class ProductsManager {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter product ID you wanna delete: ");
         int idDelete = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < productList.size(); i++) {
-            if (productList.get(i).getId() == idDelete) {
-                productList.remove(i);
+        for (Products product: productList) {
+            if (product.getId() == idDelete){
+                productList.remove(product);
+                break;
             }
         }
+//        for (int i = 0; i < productList.size(); i++) {
+//            if (productList.get(i).getId() == idDelete) {
+//                productList.remove(i);
+//            }
+//        }
     }
 
     public static void editProducts() {
@@ -62,6 +72,7 @@ public class ProductsManager {
         String information = scanner.nextLine();
         System.out.println("Set the product's price: ");
         int price = Integer.parseInt(scanner.nextLine());
+
         for (int i = 0; i < productList.size(); i++) {
             if (productList.get(i).getId() == idEdit) {
                 productList.get(i).setId(id);

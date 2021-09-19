@@ -1,9 +1,9 @@
 package _12_java_collection_framework.practice.sort_comparable_comparator;
 
 
-public class Students implements Comparable<Students>{
+public class Students implements Comparable<Students> {
     private String name;
-    private  Integer age;
+    private Integer age;
     private String address;
 
     public Students(String name, Integer age, String address) {
