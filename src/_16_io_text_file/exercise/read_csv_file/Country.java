@@ -46,4 +46,7 @@ public class Country {
                 ", name='" + name + '\'' +
                 '}';
     }
+    public String getInfoToCSV(){
+        return id + ", " + code + ", " + name;
+    }
 }
