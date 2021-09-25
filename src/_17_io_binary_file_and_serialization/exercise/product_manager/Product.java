@@ -1,16 +1,17 @@
 package _17_io_binary_file_and_serialization.exercise.product_manager;
-
 import java.io.Serializable;
 
 public class Product implements Serializable {
-    int id;
-    String name;
-    double price;
-    String brand;
-    String describe;
-    public Product(){
+    private int id;
+    private String name;
+    private double price;
+    private String brand;
+    private String describe;
+
+    public Product() {
 
     }
+
     public Product(int id, String name, double price, String brand, String describe) {
         this.id = id;
         this.name = name;
