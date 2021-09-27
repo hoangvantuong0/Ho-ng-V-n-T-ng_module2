@@ -1,9 +1,9 @@
-package _17_string.exercise;
+package _19_string.exercise;
 
 public class PhoneNumberTest {
     public static PhoneNumber phoneNumber;
     public static final String[] validPhoneNumber = {"(84)-(0978489648)"};
-    public static final String[] invalidPhoneNumber = new String[]{""};
+    public static final String[] invalidPhoneNumber = {"(A2)-(1241513m)"};
 
     public static void main(String[] args) {
         phoneNumber = new PhoneNumber();
