@@ -1,9 +1,9 @@
-package _17_string.exercise;
+package _19_string.exercise;
 
 public class ClassNameTest {
     private static ClassName className;
-    public static final String[] validClassName = new String[]{"C0721G"};
-    public static final String[] invalidClassName = new String[]{"M0318G", "P0323A"};
+    public static final String[] validClassName = new String[]{"C0721G","P3563L","A4265M"};
+    public static final String[] invalidClassName = new String[]{"M0318G", "P0323A","f2356D"};
 
     public static void main(String[] args) {
         className = new ClassName();

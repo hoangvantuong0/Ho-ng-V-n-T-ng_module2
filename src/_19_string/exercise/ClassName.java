@@ -1,13 +1,13 @@
-package _17_string.practice;
+package _19_string.exercise;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class AccountExample {
+public class ClassName {
+    private static final String ACCOUNT_REGEX = "^[CAP]\\d{4}[GHIKLM]$";
 
-    private static final String ACCOUNT_REGEX = "^[_a-z0-9]{6,}$";
+    public ClassName() {
 
-    public AccountExample() {
     }
 
     public boolean validate(String regex) {
