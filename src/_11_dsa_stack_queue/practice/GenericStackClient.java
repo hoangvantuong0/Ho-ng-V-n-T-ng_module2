@@ -1,6 +1,4 @@
 package _11_dsa_stack_queue.practice;
-
-
 import static _11_dsa_stack_queue.practice.MyGenericStack.stackOfIStrings;
 import static _11_dsa_stack_queue.practice.MyGenericStack.stackOfIntegers;
 

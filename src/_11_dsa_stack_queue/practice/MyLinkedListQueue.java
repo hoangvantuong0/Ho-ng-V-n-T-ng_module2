@@ -36,12 +36,3 @@ public class MyLinkedListQueue {
         return temp;
     }
 }
-
-
-
-
-
-
-
-
-

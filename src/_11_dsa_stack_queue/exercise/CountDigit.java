@@ -6,7 +6,8 @@ import java.util.TreeMap;
 
 public class CountDigit {
     public static void main(String[] args) {
-        String str = "Xin chao, toi la Tuong, toi la hoc vien CodeGym Dn";
+
+        String str = "Hello my name is Tuong, I am from Da Nang, what is your name ? and where are you from ?";
         str = str.toLowerCase(Locale.ROOT).replaceAll(",", "");
         String[] arrayString = str.split(" ");
         System.out.println(Arrays.toString(arrayString));

@@ -1,6 +1,7 @@
 package _10_dsa_list.exercise;
 
 public class LinkedList<E> {
+
     private class Node {
         private Node next;
         private Object data;
